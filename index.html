@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Bank</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Sign Up Form -->
+    <div id="signup-form" class="form-container">
+      <h2>Create an Account</h2>
+      <input type="text" id="signup-name" placeholder="Full Name" required>
+      <input type="email" id="signup-email" placeholder="Email" required>
+      <input type="password" id="signup-password" placeholder="Password" required>
+      <button id="signup-button">Sign Up</button>
+      <p>Already have an account? <a href="#" id="show-login">Log In</a></p>
+    </div>
+
+    <!-- Log In Form -->
+    <div id="login-form" class="form-container hidden">
+      <h2>Welcome Back</h2>
+      <input type="email" id="login-email" placeholder="Email" required>
+      <input type="password" id="login-password" placeholder="Password" required>
+      <button id="login-button">Log In</button>
+      <p>Don't have an account? <a href="#" id="show-signup">Sign Up</a></p>
+    </div>
+
+    <!-- Account Dashboard -->
+    <div id="dashboard" class="hidden">
+      <h2>Hello, <span id="user-name"></span>!</h2>
+      <p>Your current balance is: ₹<span id="user-balance">0.00</span></p>
+
+      <!-- Transaction Section -->
+      <div class="transaction-section">
+        <h3>Make a Transaction</h3>
+        <input type="number" id="transaction-amount" placeholder="Enter amount" required>
+        <button id="deposit-button">Deposit</button>
+        <button id="withdraw-button">Withdraw</button>
+      </div>
+
+      <!-- Transfer Section -->
+      <div class="transfer-section">
+        <h3>Transfer Funds</h3>
+        <input type="email" id="transfer-email" placeholder="Recipient's Email" required>
+        <input type="number" id="transfer-amount" placeholder="Amount to Transfer" required>
+        <button id="transfer-button">Transfer</button>
+      </div>
+
+      <!-- Save and Refresh Buttons -->
+      <div class="session-controls">
+        <button id="save-button">Save</button>
+        <button id="refresh-button">Refresh</button>
+        <button id="logout-button">Log Out</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

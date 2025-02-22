@@ -1,0 +1,104 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+  }
+  
+  .container {
+    width: 350px;
+    margin: 80px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-container, #dashboard {
+    text-align: center;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="number"] {
+    width: 80%;
+    padding: 12px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+  
+  button {
+    width: 84%;
+    padding: 12px;
+    margin: 10px 0;
+    background-color: #007bff;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  p {
+    font-size: 14px;
+  }
+  
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .transaction-section, .transfer-section {
+    margin-top: 20px;
+  }
+  
+  .transaction-section h3, .transfer-section h3 {
+    margin-bottom: 10px;
+  }
+  
+  .transaction-section input,
+  .transfer-section input {
+    width: 80%;
+    padding: 10px;
+    margin: 5px 0;
+  }
+  
+  .session-controls {
+    margin-top: 20px;
+  }
+  
+  #logout-button {
+    background-color: #dc3545;
+  }
+  
+  #logout-button:hover {
+    background-color: #c82333;
+  }
+  
+  #save-button {
+    background-color: #28a745;
+  }
+  
+  #save-button:hover {
+    background-color: #218838;
+  }
+  
+  #refresh-button {
+    background-color: #17a2b8;
+  }
+  
+  #refresh-button:hover {
+    background-color: #117a8b;
+  }
+  
